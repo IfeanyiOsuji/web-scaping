@@ -16,6 +16,7 @@ xpath = '//div[@id="uid"]/span//h4'
 # Create the CSS Locator string equivalent to the XPath
 css_locator = 'div#uid > span h4'
 
+# Assigning Attributes
 
 """
     Set up the Selector object sel using the string html as the text input.
