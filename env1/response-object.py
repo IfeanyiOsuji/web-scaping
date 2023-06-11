@@ -36,10 +36,10 @@ class DCdescr( scrapy.Spider ):
     # Extract course description
     course_descr = response.css( 'p.course__description::text' ).extract_first()
     # For now, just yield the course description
-    print(course_descr)
+    
     yield course_descr
 
-process = CrawlerProcess()
-process.crawl(DCdescr)
-process.start()
+process1 = CrawlerProcess()
+process1.crawl(DCdescr)
+process1.start()
 
